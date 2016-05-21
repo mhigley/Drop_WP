@@ -1,0 +1,9 @@
+# Gulp, Sass, NPM
+/node_modules
+/.tmp
+/.sass-cache
+*.css.map
+/bower_components
+
+# Mac stuff
+/.DS_Store
