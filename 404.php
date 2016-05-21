@@ -2,7 +2,9 @@
 /**
  * The template for displaying 404 pages (not found).
  *
- * @package Sip
+ * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ *
+ * @package Drop_WP
  */
 
 get_header(); ?>
@@ -12,19 +14,23 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'sip' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'drop_wp' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'sip' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'drop_wp' ); ?></p>
 
-					<?php get_search_form(); ?>
+					<?php
+						get_search_form();
 
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+						the_widget( 'WP_Widget_Recent_Posts' );
 
-					<?php if ( sip_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+						// Only show the widget if site has multiple categories.
+						if ( drop_wp_categorized_blog() ) :
+					?>
+
 					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php _e( 'Most Used Categories', 'sip' ); ?></h2>
+						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'drop_wp' ); ?></h2>
 						<ul>
 						<?php
 							wp_list_categories( array(
@@ -37,15 +43,16 @@ get_header(); ?>
 						?>
 						</ul>
 					</div><!-- .widget -->
-					<?php endif; ?>
 
 					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'sip' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
+						endif;
 
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+						/* translators: %1$s: smiley */
+						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'drop_wp' ), convert_smilies( ':)' ) ) . '</p>';
+						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+
+						the_widget( 'WP_Widget_Tag_Cloud' );
+					?>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
@@ -53,4 +60,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php
+get_footer();

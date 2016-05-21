@@ -1,7 +1,7 @@
 var gulp  	    = require( 'gulp' ),
     gutil       = require( 'gulp-util' ),
-    browserify	= require( 'gulp-browserify' ),
-    autoprefix	= require( 'gulp-autoprefixer' ),
+    browserify  = require( 'gulp-browserify' ),
+    autoprefix	 = require( 'gulp-autoprefixer' ),
     minifycss   = require( 'gulp-minify-css' ),
     watch       = require( 'gulp-watch' ),
     uglify      = require( 'gulp-uglify' ),
@@ -12,9 +12,9 @@ var gulp  	    = require( 'gulp' ),
     stylish     = require( 'jshint-stylish' ),
     reload      = browserSync.reload;
 
-var phpSources	= [ './**/*.php' ],
+var phpSources	   = [ './**/*.php' ],
     sassSources	= [ './scss/**/*.scss' ],
-    jsSources   = [ './js/**/*.js' ];
+    jsSources     = [ './js/**/*.js' ];
 
 var onError = function( err ){
   	gutil.beep();

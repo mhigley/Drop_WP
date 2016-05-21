@@ -1,8 +1,8 @@
 {
-  "name": "underscores-sip",
+  "name": "drop_wp",
   "version": "0.0.1",
-  "description": "Underscores, enhanced with Gulp and Sass for improved workflow",
-  "author": "Tomaž Zaman <tomaz@codeable.io>",
+  "description": "Underscores, supercharged with Gulp and Sass",
+  "author": "Matthew Higley <mhigley@bitwiseindustries.com>",
   "ignore": [
     "**/.*",
     "node_modules",

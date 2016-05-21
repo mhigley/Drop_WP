@@ -1,7 +1,7 @@
 {
   "name": "drop_wp",
   "version": "0.0.1",
-  "description": "Drop_WP, A Wordpress starter supercharged with Gulp and Sass",
+  "description": "Drop_WP, A Wordpress starter theme based on Underscores, heavily influenced by Sip, supercharged with Gulp and Sass",
   "author": "Matthew Higley <mhigley@bitwiseindustries.com>",
   "devDependencies": {
     "gulp": "~3.9.1",
