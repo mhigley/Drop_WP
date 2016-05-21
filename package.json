@@ -1,0 +1,21 @@
+{
+  "name": "drop_wp",
+  "version": "0.0.1",
+  "description": "Drop_WP, A Wordpress starter supercharged with Gulp and Sass",
+  "author": "Matthew Higley <mhigley@bitwiseindustries.com>",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-util": "~3.0.7",
+    "gulp-browserify": "~0.5.1",
+    "gulp-autoprefixer": "~3.1.0",
+    "gulp-minify-css": "~1.2.0",
+    "gulp-watch": "~4.2.4",
+    "gulp-uglify": "~1.2.0",
+    "gulp-sass": "~2.0.3",
+    "gulp-plumber": "~1.1.0",
+    "browser-sync": "~2.11.2",
+    "gulp-jshint": "~1.11.2",
+    "jshint-stylish": "~2.0.1"
+  },
+  "dependencies": {}
+}
