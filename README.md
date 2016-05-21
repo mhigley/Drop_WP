@@ -1,6 +1,6 @@
-# Sip, a WordPress starter theme with Gulp and Sass
+# Drop_WP, a WordPress starter theme with Gulp and Sass
 
-Sip is a theme based on Automattic’s [Underscores](http://underscores.me/), enhanced with a basic Sass framework and a minimal [Gulp](https://codeable.io/community/speed-up-your-theme-development-with-gulp/) setup that serves as a base to build on for improved theme development workflow.
+Drop_WP is a modified theme essentially stolen from the amazing Sip theme that is based on Automattic’s [Underscores](http://underscores.me/), enhanced with a basic Sass framework and a minimal [Gulp](https://codeable.io/community/speed-up-your-theme-development-with-gulp/) setup that serves as a base to build on for improved theme development workflow.
 
 ### Download and activate
 
@@ -8,7 +8,7 @@ You first need to clone this repository by entering the following commands:
 
 ```
 $ cd /your/WordPress/wp-content/themes/
-$ git clone git@github.com:codeablehq/Sip.git
+$ git clone git@github.com:mhigley/Drop_WP.git
 ```
 
 Now login into WordPress and activate the theme.
@@ -30,12 +30,11 @@ Take a look at the `gulpfile.js`, which contains the necessary tasks and then ex
 
 ### Contributors
 
-- [Tomaž Zaman](https://twitter.com/tomazzaman)
-- [Zell Liew](https://twitter.com/zellwk)
+- [Tomaž Zaman](https://twitter.com/tomazzaman) <== 99% his work.
 
 ### License
 
-Licensed under GPLv2 or later, same as Underscores.
+Licensed under GPLv2 or later, same as Sip, same as Underscores.
 
 
 
