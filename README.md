@@ -1,6 +1,6 @@
 # Drop_WP, a WordPress starter theme with Gulp and Sass
 
-Drop_WP is a modified theme essentially stolen from the amazing Sip theme that is based on Automattic’s [Underscores](http://underscores.me/), enhanced with a basic Sass framework and a minimal [Gulp](https://codeable.io/community/speed-up-your-theme-development-with-gulp/) setup that serves as a base to build on for improved theme development workflow.
+Drop_WP is a starter theme heavily influenced from the amazing Sip theme that is based on Automattic’s [Underscores](http://underscores.me/), enhanced with a basic Sass framework and a minimal [Gulp](https://codeable.io/community/speed-up-your-theme-development-with-gulp/) setup that serves as a base to build on for improved theme development workflow.
 
 ```
 $ cd /your/WordPress/wp-content/themes/
